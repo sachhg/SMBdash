@@ -1,4 +1,4 @@
-Financial Intelligence Dashboard for SMBs
+**##Financial Intelligence Dashboard for SMBs**
 
 Designed to empower small-medium businesses to understand their financials, and get ML recommendations for how to optimize spending and maximize profits.
 ---
@@ -17,28 +17,14 @@ Designed to empower small-medium businesses to understand their financials, and 
 
 ---
 
-## 🧩 Architecture & Features
-
-### Modular, Scalable Structure
-- **Atomic component design:** UI primitives (Button, Card, Badge, etc.) are reusable and themeable.
-- **Layout system:** Responsive sidebar, header, and main content area using composition.
-- **Page-based routing:** Each major feature is a route (`/`, `/roi`, `/recommendations`, `/benchmarks`).
-
-### Dashboard Features
-- **Account Connections:** Simulated integration with Stripe, Shopify, Meta Ads, and QuickBooks.
+## Dashboard Features
+- **Account Connections:** integration with Stripe, Shopify, Meta Ads, and QuickBooks (currently simulated using custom mock APIs).
 - **Metrics Overview:** Real-time (mocked) KPIs for transactions and campaigns.
 - **Spend Analytics:** Interactive charts and quick insights for financial activity.
 - **ROI Analysis:** Campaign performance breakdown with ROI, spend, revenue, and optimization suggestions.
 - **AI Recommendations:** Smart, actionable nudges for capital allocation and cost savings, with accept/ignore flows.
 - **Industry Benchmarks:** Peer comparison, trend analytics, and visualizations for key spend categories.
 - **404 Handling:** Custom not-found page for unmatched routes.
-
-### Developer Experience
-- **Type-safe throughout:** All business logic and UI components are strongly typed.
-- **Path aliases:** Clean imports via `@/` alias (configured in Vite and TypeScript).
-- **Mock API layer:** Easily swappable for real API integration.
-- **Custom theming:** Tailwind config and CSS variables for easy brand adaptation.
-- **Accessible UI:** Built on Radix primitives for keyboard and screen reader support.
 
 ---
 
@@ -101,24 +87,6 @@ src/
   App.tsx        # Main app shell and routing
   main.tsx       # Entry point
 ```
-
----
-
-## 🧑‍💻 Technical Highlights
-
-- **Modern React patterns:** Hooks, context, composition, and suspense-ready data fetching.
-- **Component-driven:** All UI is built from composable, themeable primitives.
-- **Mocked data:** No real financial data is used; all data is generated for demo purposes.
-- **Responsive and accessible:** Works across devices and supports keyboard navigation.
-- **Easy to extend:** Add new integrations, analytics, or UI modules with minimal friction.
-
----
-
-## 📣 For Recruiters & Engineers
-
-- **Demonstrates:** Modern React, TypeScript, scalable architecture, and UI/UX best practices.
-- **Ready for:** Real API integration, authentication, multi-tenant support, and further productization.
-- **Code quality:** Clean, maintainable, and idiomatic codebase with a focus on developer experience.
 
 ---
 
