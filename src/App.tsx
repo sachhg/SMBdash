@@ -16,16 +16,13 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/roi" element={<ROI />} />
-          <Route path="/recommendations" element={<Recommendations />} />
-          <Route path="/benchmarks" element={<Benchmarks />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/roi" element={<ROI />} />
+        <Route path="/recommendations" element={<Recommendations />} />
+        <Route path="/benchmarks" element={<Benchmarks />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </TooltipProvider>
   </QueryClientProvider>
 );
